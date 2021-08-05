@@ -1,1 +1,12 @@
-{}
+{
+    "queues": [
+        {
+          "id":1,
+          "queueName":"QUEUE_1",
+          "label": "Queue 1",
+          "lastDate": "2021-07-11 11:30:10",
+          "cnt1h": 200,
+          "cnt1m": 10
+        }
+    ]
+}
