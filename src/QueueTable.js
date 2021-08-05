@@ -36,12 +36,17 @@ function QueueTable({ data, columns }) {
 function getColumnsX() {
   return [
     {
-      Header: "Queue Name",
-      accessor: "queueName",
-    },
-    {
-      Header: "Label",
-      accessor: "label",
+      Header: "Info",
+      columns: [
+        {
+          Header: "Queue Name",
+          accessor: "queueName",
+        },
+        {
+          Header: "Label",
+          accessor: "label",
+        },
+      ],
     },
   ];
 }
