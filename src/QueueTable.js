@@ -34,22 +34,51 @@ function QueueTable({ data, columns }) {
 }
 
 function getColumnsX() {
-  return [
-    {
-      Header: "Info",
-      columns: [
-        {
-          Header: "Queue Name",
-          accessor: "queueName",
-        },
-        {
-          Header: "Label",
-          accessor: "label",
-        },
-      ],
-    },
-  ];
-}
+    return [
+      {
+        Header: "Info",
+        columns: [
+          {
+            Header: "Queue Name",
+            accessor: "queueName",
+          },
+          {
+            Header: "Label",
+            accessor: "label",
+          },
+        ],
+      },
+      {
+        Header: "Counters",
+        columns: [
+          {
+            Header: "1h",
+            accessor: "cnt1h",
+          },
+          {
+            Header: "10min",
+            accessor: "cnt10m",
+          },
+          {
+            Header: "1min",
+            accessor: "cnt1m",
+          },
+        ],
+      },{
+        Header: "Status",
+        columns: [
+          {
+            Header: "Last Date",
+            accessor: "lastDate",
+          },
+          {
+            Header: "Status",
+            accessor: "status",
+          },      
+        ],
+      }
+    ];
+  }
 
 class LoadedQueueTable extends React.Component {
   constructor(props) {
