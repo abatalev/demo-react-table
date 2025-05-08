@@ -21,3 +21,15 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+## To Do
+
+- [ ] upgrade json-server from 0.17.4 to 1.0.0-beta.3
+      Problems:
+       - server.js doesn't work.
+         
+         Variants:
+         - rewritten server.js
+           json-server 1.0.0 used tinyhttp (not express)
+         - use cli json-server 
+           json-server --watch db.json --routes routes.json --port 8089
